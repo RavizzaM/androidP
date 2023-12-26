@@ -1,7 +1,10 @@
 import os
 import secrets
 from flask_sqlalchemy import SQLAlchemy
-import urllib
+import urllib.parse
+import hashlib
+
+
 
 
 params = urllib.parse.quote_plus(f"DRIVER={os.environ['DRIVER']};SERVER={os.environ['SERVER']};DATABASE={os.environ['DATABASE']};Trusted_Connection=yes;")

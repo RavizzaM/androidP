@@ -10,4 +10,4 @@ class Teacher(db.Model):
     
     # Establece la relación con el modelo Usuarios
    # usuario = db.relationship('Usuarios', back_populates='profesor')
-
+    #AlumnosSinAsignaciones
